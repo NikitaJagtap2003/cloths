@@ -1,10 +1,10 @@
-const WEBSITE_NAME = "mahalakshmi Kurti  Wear👗";
-const CARD_TITLE = "Black Rayon Kurti For Navratri Garba Festival ";
-const PRODUCT_PRICE ="₹500"
-const MAIN_IMG ="https://www.pomchajaipur.com/cdn/shop/products/1_7.jpg?v=1670337807&width=1080"
-const SUB_IMG ="https://www.pomchajaipur.com/cdn/shop/products/image_f621a051-8d1e-4eac-aa93-ac451bad89e0.jpg?v=1671802089&width=1800"
-const SUB_IMG1 ="https://www.pomchajaipur.com/cdn/shop/products/1_7.jpg?v=1670337807&width=1080"
-const SUB_IMG2 ="https://www.pomchajaipur.com/cdn/shop/products/image_f621a051-8d1e-4eac-aa93-ac451bad89e0.jpg?v=1671802089&width=1800"
-const SUB_IMG3 ="https://www.pomchajaipur.com/cdn/shop/products/2_8_2b674df5-5a9e-4bde-8db5-105dacd0c759.jpg?v=1670337807&width=1800"
+const WEBSITE_NAME = "SARSVATI SAREE..";
+const CARD_TITLE = "Ready to wear embellished bollywood satin sarree";
+const PRODUCT_PRICE ="₹1900"
+const MAIN_IMG ="https://5.imimg.com/data5/SELLER/Default/2024/3/401526621/AE/PP/ES/134252498/imran12756-500x500.jpg"
+const SUB_IMG ="https://assets0.mirraw.com/images/12850453/image_zoom.jpeg?1727271033"
+const SUB_IMG1 ="https://assets0.mirraw.com/images/12850434/image_zoom.jpeg?1727270985"
+const SUB_IMG2 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjx7GHZiApU6iymZMo2oHEzHkH-xK3VdsZ8tphEwuYOvnKGTGm0ak6XhAEo7J663cYMuE&usqp=CAU"
+const SUB_IMG3 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh0RRrpSIJzBOrGRtEo2PTrep1uOh7PICZqhJUcH2CArG9Yj7zWlUV8I6XP8O3tMrtgw0&usqp=CAU"
 
 export {WEBSITE_NAME,CARD_TITLE, PRODUCT_PRICE,MAIN_IMG,SUB_IMG,SUB_IMG1,SUB_IMG2,SUB_IMG3};

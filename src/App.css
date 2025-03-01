@@ -1,10 +1,10 @@
 body{
-    background-color: wheat;
+    background-color:rgb(235, 237, 235);
 }
 .Button{
     background-color: black;
     padding: 5px 15px;
-    color: rgb(85, 182, 252);
+    color: rgb(191, 255, 0);
     border: none;
     cursor: pointer;
     font-size: 18px;
@@ -14,7 +14,7 @@ body{
    
 }
 .Button:hover{
-    background-color: rgb(141, 211, 71);
+    background-color: rgb(233, 237, 228);
     transition: 1s;
 }
 

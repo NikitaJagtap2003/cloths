@@ -1,52 +1,65 @@
-import React from 'react'
-import './App.css'
-import { Filter,ShoppingCart,Tag } from 'lucide-react'
-import { WEBSITE_NAME,CARD_TITLE, PRODUCT_PRICE,MAIN_IMG,SUB_IMG,SUB_IMG1,SUB_IMG2,SUB_IMG3} from './config'
-
+import React from 'react';
+import './App.css';
+import { Filter, ShoppingCart, Tag } from 'lucide-react';
+import { WEBSITE_NAME, CARD_TITLE, PRODUCT_PRICE, MAIN_IMG, SUB_IMG, SUB_IMG1, SUB_IMG2, SUB_IMG3 } from './config';
 
 export default function App() {
   return (
-    <div >
-      <h1 className='text-5xl font-bold flex justify-center my-2 '>{WEBSITE_NAME}</h1>
+    <div className='bg-gray-100 min-h-screen py-10 px-5'>
+      <h1 className='text-5xl font-bold text-center text-gray-800'>{WEBSITE_NAME}</h1>
 
-      <div className='flex justify-end'>
-        <button className='Button'><Filter className='flex inline-block mx-2 w-4 h-4' />All</button>
-        <button className='Button'><Filter className='flex inline-block mx-2 w-4 h-4' />Men </button>
-        <button className='Button'><Filter className='flex inline-block mx-2 w-4 h-4' />Women </button>
-        <button className='Button'><ShoppingCart className='flex inline-block mx-2 w-4 h-4'/>0</button>
+      {/* Filter and Cart Buttons */}
+      <div className='flex justify-end space-x-4 my-6'>
+        <button className='px-4 py-2 bg-blue-500 text-white rounded-lg flex items-center shadow-md hover:bg-blue-600 transition'>
+          <Filter className='w-5 h-5 mr-2' /> All
+        </button>
+        <button className='px-4 py-2 bg-blue-500 text-white rounded-lg flex items-center shadow-md hover:bg-blue-600 transition'>
+          <Filter className='w-5 h-5 mr-2' /> Men
+        </button>
+        <button className='px-4 py-2 bg-blue-500 text-white rounded-lg flex items-center shadow-md hover:bg-blue-600 transition'>
+          <Filter className='w-5 h-5 mr-2' /> Women
+        </button>
+        <button className='px-4 py-2 bg-green-500 text-white rounded-lg flex items-center shadow-md hover:bg-green-600 transition'>
+          <ShoppingCart className='w-5 h-5 mr-2' /> 0
+        </button>
       </div>
 
-      <div className='flex justify-center bg-gray-200 w-[1000px] h-[550px] mx-10 my-10 rounded-lg border'>
-        {/* Card */}
-        <div>
-          <img src={MAIN_IMG} alt='img'  className='w-[300px] h-[450px] py-5 mx-4'/>
-          <button className='Button1'>Add to Cart</button>
-          <button className='Button1 '>Buy Now</button> 
-        </div>
-        {/* card Deatil */}
-        <div>
-          <h1 className='text-2xl mx-6 py-3'>{CARD_TITLE}</h1>
-          {/* Price*/}
-          <h2 className='text-2xl mx-6 font-bold'>{PRODUCT_PRICE}</h2>
-           {/* images */}
-          <div className=' flex w-[150px] h-[200px] py-5 mx-5 '>
-            <img src={SUB_IMG} alt='img' />
-            <img src={SUB_IMG1} alt='img' />
-            <img src={SUB_IMG2} alt='img'/>
-            <img src={SUB_IMG3} alt='img'/>
+      {/* Product Card */}
+      <div className='flex justify-center'>
+        <div className='bg-white rounded-xl shadow-lg p-6 flex space-x-8 w-[900px]'>
+          {/* Product Image */}
+          <div>
+            <img src={MAIN_IMG} alt='img' className='w-[320px] h-[480px] rounded-lg shadow-md' />
+            <div className='flex space-x-4 mt-4'>
+              <button className='w-full px-4 py-2 bg-yellow-500 text-white rounded-lg shadow-md hover:bg-yellow-600 transition'>Add to Cart</button>
+              <button className='w-full px-4 py-2 bg-red-500 text-white rounded-lg shadow-md hover:bg-red-600 transition'>Buy Now</button>
+            </div>
           </div>
-          {/* offers */}
-          <div className=' mx-6 text-sm'>
-            <h3 className='text-xl'>Available offers</h3> 
-            <hr></hr>
-            <p><Tag className='w-4 h-4 inline-block' /><span className='font-bold'>Bank Offer5%</span> Unlimited Cashback on Flipkart Axis Bank Credit Card T&C.</p>
-            <p><Tag className='w-4 h-4 inline-block' /><span className='font-bold'>Bank Offer10%</span> off on BOBCARD Transactions, up to ₹1,000 on orders of ₹5,000 and aboveT&C.</p>
-            <p><Tag className='w-4 h-4 inline-block' /><span className='font-bold'>Combo Offer</span> Buy 2 or more items save ₹20See all productsT&C.</p>
+          
+          {/* Product Details */}
+          <div className='flex-1'>
+            <h1 className='text-3xl font-semibold text-gray-800'>{CARD_TITLE}</h1>
+            <h2 className='text-2xl font-bold text-green-600 my-4'>{PRODUCT_PRICE}</h2>
+            
+            {/* Thumbnail Images */}
+            <div className='flex space-x-2'>
+              <img src={SUB_IMG} alt='img' className='w-20 h-20 rounded-md shadow' />
+              <img src={SUB_IMG1} alt='img' className='w-20 h-20 rounded-md shadow' />
+              <img src={SUB_IMG2} alt='img' className='w-20 h-20 rounded-md shadow' />
+              <img src={SUB_IMG3} alt='img' className='w-20 h-20 rounded-md shadow' />
+            </div>
+            
+            {/* Offers Section */}
+            <div className='mt-6'>
+              <h3 className='text-xl font-semibold text-gray-800'>Available Offers</h3>
+              <hr className='my-2' />
+              <p className='text-gray-600'><Tag className='w-4 h-4 inline-block text-blue-500' /> <span className='font-bold'>Bank Offer:</span> 5% Unlimited Cashback on Flipkart Axis Bank Credit Card.</p>
+              <p className='text-gray-600'><Tag className='w-4 h-4 inline-block text-blue-500' /> <span className='font-bold'>Bank Offer:</span> 10% off on BOBCARD Transactions, up to ₹1,000 on orders of ₹5,000 and above.</p>
+              <p className='text-gray-600'><Tag className='w-4 h-4 inline-block text-blue-500' /> <span className='font-bold'>Combo Offer:</span> Buy 2 or more items & save ₹20.</p>
+            </div>
           </div>
         </div>
-
       </div>
-
     </div>
-  )
+  );
 }
